@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json-project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>    
+</head>
+<body onload="caricagioc()">
+    <main>
+
+    </main>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div class="container">
+            <div class="searchBox">
+                
+                <input class="searchInput"type="text" name="" placeholder="Search" onkeyup="filter()">
+                <button class="searchButton" style="pointer-events: none;">
+                    <i class="material-icons">
+                        search
+                    </i>
+                </button>
+            </div>
+            <h1>MODIFICA o AGGIUNGI o ELIMINA DATI</h1>
+            <form id="mainform" style="gap: 4px; display: flex; flex-direction: row; gap: 20px;">
+                <div>
+                    <label for="nome" style="font-size: 2em;">Nome:</label><br>
+                    <input type="text" id="nome"><br>
+                    <label for="cognome" style="font-size: 2em;">Cognome:</label><br>
+                    <input type="text" id="cognome">
+                </div>
+                <div>
+                    <label for="eta" style="font-size: 2em;">Età:</label><br>
+                    <input type="text" id="eta"><br>
+                    <label for="goal" style="font-size: 2em;">Goal:</label><br>
+                    <input type="text" id="goal">
+                </div>   
+                <div>
+                    <label for="id" style="font-size: 2em;">Specifica ID:</label><br>              
+                    <input type="text" id="id"><br><br><br>
+                      
+                    <button type="button" onclick="modifica()">MODIFICA</button>
+                    <button type="button" onclick="aggiungi()" style="width: 6.2em;">AGGIUNGI</button>
+                    <button type="button" onclick="elimina()" style="width: 6.2em;">ELIMINA</button>
+                   
+                </div>   
+                <h2>PER ELIMINARE BASTA SOLO METTERE L'ID, PER AGGIUNGERE SI PUO' NON METTERE</h2>          
+            </form>
+        </div>        
+    </div>
+    
+    
+</body>
+</html>
